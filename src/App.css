@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+body {
+  background-color: #F29393;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  background-color: white;
+  min-height: 80vh;
+  width: 400px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px; 
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+li {
+  list-style-type: none;
+}
+.add {
+  background-color: #554994;
+  margin-top: 20px;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.delete {
+  background-color: #F675A8;
 }
+button {
+  padding: 10px 20px;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border: none;
+  border-radius: 10px;
+}
+h1, li, input, button {
+  font-family: 'Merriweather', serif;
+}
+h1 {
+  font-size: 23px;
+}
+button {
+  font-size: 13px;
+}
+input {
+  font-size: 13px;
+}
+li {
+  font-size: 13px;
+}
+.crossed {
+  text-decoration: line-through;
+}
+.simpleList {
+  list-style-image: url("add.jpg"); 
+  list-style-position: inside;
+}
+input {
+  padding: 10px;
+  flex: 1;
 }
